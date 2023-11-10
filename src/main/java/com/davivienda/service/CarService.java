@@ -51,4 +51,8 @@ public class CarService {
         em.remove(car);
         return id;
     }
+
+    public boolean validatePlate(Car car) {
+        return car.getPlate().length() == 6;
+    }
 }
